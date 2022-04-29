@@ -1,0 +1,80 @@
+<!--pages/newbook1/newbook1.wxml-->
+<!--书籍基础资料-->
+<view class="c">
+   <image src="{{good.img}}" class="ci"></image>
+   <view class="c1">
+      <text>{{good.title}}</text>
+      <text class="t1">{{good.sub1}}</text>
+      <text class="t2">{{good.reading}}</text>
+      <text class="t2">剩余{{good.number}}本</text>
+   </view>
+</view>
+
+<!--空白区域-->
+<view class="cc"></view>
+
+<!--简介详情-->
+<view class="c3">
+   <view class="cjianjie">简介</view>
+   <text class="conts {{isF?'hide':''}}">{{good.sub2}}</text>
+   <text bindtap='aa'>{{isF ? '展开﹀' : '收起︿'}}</text>
+</view>
+
+<!--空白区域-->
+<view class="cc"></view>
+
+<!--简介详情-->
+
+<view class="go1">出版信息</view>
+<view class="go">
+   <text>出版时间:{{good.bytime}}</text>
+   <text>书籍分类:{{good.catalog}}</text>
+</view>
+
+<view class="cc"></view>
+
+<view class="go1">精彩评论</view>
+<view class="go2" wx:for="{{commentArray}}">
+   <view class="gorow">
+      <image src="{{item.avatarUrl}}"></image>
+      <text>{{item.nickName}}</text>
+   </view>
+   <text class="t1">评论内容:{{item.inputValue}}</text>
+   <text class="t1">评论时间:{{item.submit}}</text>
+</view>
+
+
+<!--底部区域-->
+<view class="bottom">
+   <view class="bottom1">
+      <navigator open-type="switchTab" url="/pages/index/index">
+         <view>
+            <image src="/stages/tabBar/a4.png"></image>
+         </view>
+         <view>首页</view>
+      </navigator>
+   </view>
+   <view class="bottom1">
+      <navigator open-type="switchTab" url="/pages/borrow/borrow">
+         <view>
+            <image src="/stages/tabBar/borrow.png"></image>
+         </view>
+         <view>书架</view>
+      </navigator>
+   </view>
+
+   <!--加入书架-->
+   <view class="bottom2" bindtap="{{ifhave==false?'addbook':'delectbook'}}" data-id="{{good._id}}" data-title="{{good.title}}" data-img="{{good.img}}" data-type="{{good.type}}" wx:if="{{good.number>0}}">{{ifhave==false?'加入书架':'已加入'}}</view>
+
+   <view class="bottom2" wx:if="{{good.number==0}}" style="background-color: grey;">库存不足</view>
+
+   <!--
+   <view class="bottom3" bindtap="{{ifgo==false?'borrowbook':'havebook'}}" data-id="{{good._id}}" data-title="{{good.title}}" data-img="{{good.img}}" data-type="{{good.type}}" data-mid="{{good.mid}}">{{ifgo==false?'立即借阅':'已借阅'}}</view>
+   立即借阅-->
+   <view class="bottom3" bindtap="more" data-id="{{good._id}}" data-type="{{good.type}}">预览章节</view>
+
+</view>
+
+<!--
+<view class="bottom3" wx:if="{{good.number==0}}" style="background-color: grey;">库存不足</view>
+-->

@@ -1,0 +1,39 @@
+<!--pages/comment/comment.wxml-->
+<view class='top'>
+<view class="top-text">请选择图书类型:</view>
+  <!-- 下拉框 -->
+  <view class='top-selected' bindtap='bindShowMsg'>
+    <text>{{grade_name}}</text>
+  </view>
+  <!-- 下拉需要显示的列表 -->
+  <view class="select_box" wx:if="{{select}}">
+    <view wx:for="{{grades}}" wx:key="unique">
+      <view class="select_one" bindtap="mySelect" data-name="{{item.catalog}}" data-type="{{item.type}}">{{item.catalog}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='top'>
+<view class="top-text">请选择图书:</view>
+  <!-- 下拉框 -->
+  <view class='top-selected' bindtap='bindShow'>
+    <text>{{book_name}}</text>
+  </view>
+  <!-- 下拉需要显示的列表 -->
+  <view class="select_box" wx:if="{{goselect}}">
+    <view wx:for="{{books}}" wx:key="unique">
+      <view class="select_one" bindtap="bookSelect" data-name="{{item.title}}" data-img="{{item.img}}" data-id="{{item._id}}">{{item.title}}</view>
+    </view>
+  </view>
+</view>
+<view class="cc"></view>
+  <!-- 评论框 -->
+<view class="talk">
+  <input bindinput="bindKeyInput" placeholder="请输入内容" value="{{inputValue}}"/>
+</view>
+<view class="button">
+   <button type="primary" bindtap="send">提交</button>
+</view>
+
+<!-- data-img="{{book_img}}" data-value="{{inputValue}}" data-name="{{book_name}} -->
+

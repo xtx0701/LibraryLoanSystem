@@ -1,0 +1,59 @@
+<!--全局-->
+<view>
+  <!--用户头部-->
+<button wx:if="{{noLogin}}" bindtap="login">授权登录</button>
+<view wx:else class="userinfo">
+  <image src="{{touxiang}}" class="a1-avatarUrl"></image>
+  <text class="a1-nickname">{{nickName}}</text>
+  <button class="a1-button" bindtap="{{approve==0?'Authentication':''}}">{{approve==0?'未认证':approve==1?'认证中':approve===2?'已认证':''}}</button>
+</view>
+
+  <!--用户功能-图标实现-->
+  <view>
+    <view class="tubiao">
+      <view>
+        <image src="/stages/tabBar/yonghu1.png" bindtap="myborrow"></image>
+        <text>我的借阅</text>
+      </view>
+      <view>
+        <image src="/stages/tabBar/yonghu2.png" bindtap="donation"></image>
+        <text>我要捐书</text>
+      </view>
+      <view>
+        <image src="/stages/tabBar/yonghu3.png" bindtap="mycomment"></image>
+        <text>评论记录</text>
+      </view>
+    </view>
+
+    <!--用户功能-文字实现-->
+    <view>
+      <view class="wenzi">
+        <view class="wenzi1">
+          <image src="/stages/tabBar/wenzi1.png"></image>
+          <button open-type="contact" bindcontact="handleContact" plain="true">联系客服</button>
+        </view>
+        <view class="wenzi1">
+          <image src="/stages/tabBar/wenzi2.png"></image>
+          <text bindtap="comment">我的评论</text>
+        </view>
+        <view class="wenzi1">
+          <image src="/stages/tabBar/wenzi3.png" mode="widthFix"></image>
+          <text bindtap="zhuyi">注意事项</text>
+        </view>
+        <view class="wenzi1">
+          <image src="/stages/tabBar/wenzi4.png"></image>
+          <button open-type="share" plain="true">应用分享</button>
+        </view>
+        <view class="wenzi1">
+          <image src="/stages/tabBar/wenzi5.png" mode="widthFix"></image>
+          <text bindtap="goappointmentBook">我的预约</text>
+        </view>
+        <view class="wenzi1">
+          <image src="/stages/tabBar/wenzi6.png" mode="widthFix"></image>
+          <text bindtap="loginOut">退出登录</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

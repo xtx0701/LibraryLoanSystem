@@ -1,0 +1,112 @@
+
+
+
+
+.a1-avatarUrl{
+    border-radius: 50%;
+    overflow: hidden;
+    width:200rpx;
+    height: 200rpx;
+    position: relative;
+    background:blue;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+.a1-nickname{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rpx;
+  }
+  .userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: greenyellow;
+    width: 100%;
+    height: 400rpx;
+  }
+  .a1-button{
+    margin-top: 10rpx;
+  }
+  .info{
+    margin-top: 100rpx;
+  }
+
+  /**图标样式**/
+  .tubiao{
+      width: 100%;
+      height: 200rpx;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20rpx;
+      border-bottom: 1px solid #ccc;
+
+  }
+
+  .tubiao image{
+      width: 60rpx;
+      height: 60rpx;
+  }
+
+  .tubiao view{
+      width: 33%;
+      text-align: center;
+  }
+  .tubiao text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: gray;
+  }
+
+/**列表样式**/
+  .wenzi {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .wenzi image{
+     width: 60rpx;
+     height: 60rpx;
+     margin-left: 10rpx;
+ }
+
+.wenzi1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80rpx;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20rpx;
+    
+}
+/**分享按钮样式**/
+.wenzi button{
+    left: -260rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 38rpx;
+    border: none;
+    color: gray;  
+    
+}
+
+.wenzi text{
+  color: gray;
+  font-size:38rpx ;
+  margin-left: 10rpx;
+}
+
+.wenzi1 image:nth-child(2){
+   width: 18rpx;
+}
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+<!--pages/preview/preview.wxml-->
+
+<view>
+      <text class="cen">第一章</text>  
+      <text>{{list.sub2}}</text>
+</view>

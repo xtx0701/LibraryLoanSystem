@@ -1,0 +1,17 @@
+<!--pages/backbook/backbook.wxml-->
+
+<view wx:if="{{bookNum==0}}">
+没有预约记录
+</view>
+
+<view wx:for="{{list}}" wx:if="{{bookNum>0}}">
+        <view class="book">
+                <image src="{{item.img}}" class="bookimage"></image>
+            <view class="booktext">   
+                <text> {{item.title}}</text>
+                <text>状态：{{item.checked}}</text>
+                <text wx:if="{{item.day!=='undefined'}}">还书时间:{{item.day}}</text>
+            </view>    
+        </view>
+        
+</view>

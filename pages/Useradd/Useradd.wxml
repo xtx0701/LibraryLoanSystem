@@ -1,0 +1,23 @@
+<!--pages/Useradd/Useradd.wxml-->
+
+<view>
+<image src="/stages/tabBar/ic2.jpeg" class="img"></image>
+</view>
+
+<view class='title'>
+    <view class='title_text'>
+        <text>用户名称:</text>
+        <input name="title" type='text'  bindblur='nameBlur'></input>
+    </view>
+</view>
+
+<view class='title'>
+    <view class='title_text'>
+        <text>用户学号:</text>
+        <input name="title" type='text'  bindblur='numberBlur'></input>
+    </view>
+</view>
+
+<button type="primary" bindtap="send" data-name="{{name}}" data-number="{{number}}">前往认证</button>
+
+

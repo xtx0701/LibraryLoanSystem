@@ -1,0 +1,17 @@
+<!--pages/attention/attention.wxml-->
+<view>
+   <view><text class="a1">入馆指南</text></view>
+   <view><text>开放时间：</text></view>
+   <view><text class="a2">周一到周日</text></view>
+   <view class="a3"><text>早上9:00-11:30</text></view>
+   <view class="a3"><text>下午14:00-17:30</text></view>
+   <view class="a3"><text>晚上19:00-22:30</text></view>
+   <view><text>借阅规则：</text></view>
+   <view class="a4">
+    <text>(1)借阅期限为30本，30天内可续借1次，将总时间延长至60天。\n</text>
+    <text>(2)请爱护书籍，损坏或丢失需照价赔偿。\n</text>
+    <text>(3)如发现有污损或少页，要当即向工作人员报告，待工作人员处理之后再办理借阅手续。\n</text>
+    <text>(4)学生读者同时可借出书籍4本。\n</text>
+    <text>(5)争当文明读者，注意个人仪表，保持室内安静、整洁。\n</text>
+   </view>
+</view>

@@ -1,0 +1,17 @@
+<view>
+   <view class="both">
+     <!--左边菜单-->
+     <scroll-view class="left1">
+        <view wx:for="{{list}}" wx:key="id" class="nav_left_items {{leftCur==index?'active':''}}" data-type="{{item.type}}" data-index="{{index}}" bindtap="bookgo" >  
+        {{item.catalog}}
+        </view>
+     </scroll-view>
+     <!--右边详情-->
+     <scroll-view class="right1"  >   
+         <view wx:for="{{book}}" wx:key="id"  class="book" >
+        <image src="{{item.img}}" class="bookimage" data-id="{{item._id}}" data-type='{{item.type}}' bindtap="bookmove"></image>
+        <text>{{item.title}}</text>      
+         </view>
+     </scroll-view>
+    </view>
+</view>

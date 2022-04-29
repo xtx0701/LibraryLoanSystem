@@ -1,0 +1,11 @@
+<!--pages/history/history.wxml-->
+<!--index.wxml-->
+<view wx:for="{{list}}" wx:key="id" class="layout">
+  <view>
+    <image src="{{item.img}}" class="bookstyle"></image>
+  </view>
+  <view class="layin">
+    <view><text>{{item.name}}</text></view>
+    <view><text>评论:{{item.content}}</text></view>
+  </view>
+</view>

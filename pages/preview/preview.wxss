@@ -1,0 +1,5 @@
+/* pages/preview/preview.wxss */
+.cen{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,100 @@
+<!--全局-->
+<view bindtap="closeSearch">
+  <!--搜索框-->
+  <view class="a1">
+    <view class="a2">
+      <view class="a3">
+        <icon type="search" size="18"></icon>
+        <input type="text" placeholder="请输入搜索内容" bindinput="search"/>
+      </view>
+    </view>
+  </view>
+
+<view class="search" wx:if="{{isSearch}}">
+<view wx:for="{{searchContent}}">
+<view bindtap="bookit" data-id="{{item._id}}" data-type='{{item.type}}'>
+{{item.title}}
+</view>
+</view>
+</view>
+
+  <!--轮播图-->
+  <view class="movejpg">
+    <swiper autoplay="{{true}}" indicator-dots indicator-active-color="red" circular="{{true}}" vertical="{{false}}">
+      <swiper-item>
+        <image src="/stages/tabBar/lunbo1.jpg" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/stages/tabBar/lunbo1.jpg" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/stages/tabBar/lunbo1.jpg" mode="widthFix"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!--新书推荐-->
+  <view>
+    <view class="newbook">
+      <text class="newtext1">新书上架</text>
+      <text class="newtext2" bindtap="morenew">本周上新></text>
+    </view>
+  </view>
+  <view class="showbook1">
+    <view class="showbook2">
+      <view wx:for="{{list}}" wx:key="id" wx:if="{{index<=2}}" data-index="{{index}}">
+        <image src="{{item.img}}" bindtap="bookit" data-id="{{item._id}}" data-type='{{item.type}}'></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="showbook1">
+    <view class="showbook2">
+      <view wx:for="{{list2}}" wx:key="id" wx:if="{{index<=2}}" data-index='{{index}}'>
+        <image src="{{item.img}}" bindtap="bookit" data-id="{{item._id}}" data-type='{{item.type}}'></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <!--文学-->
+  <view class="newbook">
+    <text class="newtext1">文学</text>
+    <text class="newtext2" bindtap="morenew1">查看更多></text>
+  </view>
+  <view class="showbook1">
+    <view class="showbook2">
+      <view wx:for="{{list3}}" wx:key="id" wx:if="{{index<=2}}" data-index='{{index}}'>
+        <image src="{{item.img}}" bindtap="bookit" data-id="{{item._id}}" data-type='{{item.type}}'></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--少儿-->
+  <view class="newbook">
+    <text class="newtext1">教育</text>
+    <text class="newtext2" bindtap="morenew2">查看更多></text>
+  </view>
+  <view class="showbook1">
+    <view class="showbook2">
+      <view wx:for="{{list4}}" wx:key="id" wx:if="{{index<=2}}" data-index='{{index}}'>
+        <image src="{{item.img}}" bindtap="bookit" data-id="{{item._id}}" data-type='{{item.type}}'></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+  <!--搜索框-->
+
+
+
+
+
+
+
+
+
+
+</view>

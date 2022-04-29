@@ -1,0 +1,21 @@
+/* pages/backbook/backbook.wxss */
+.book{
+    display: flex;
+    flex-direction: row;
+}
+
+.booktext{
+    display: flex;
+    flex-direction: column;
+}
+
+.booktext text{
+    margin-top: 20rpx;
+    font-size: small;
+}
+.bookimage{
+    width: 170rpx;
+    height: 220rpx;
+    margin-left: 20rpx;
+    padding: 20rpx;
+}

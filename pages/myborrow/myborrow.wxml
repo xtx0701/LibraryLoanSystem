@@ -1,0 +1,38 @@
+<!--pages/myborrow/myborrow.wxml-->
+<!-- <view wx:for="{{list}}" wx:key="id" class="c">
+   <view>
+      <image src="{{item.img}}" bindtap="goDetail" data-id="{{item._id}}" data-type='{{item.type}}'></image>
+   </view>
+   <view class="c1">
+      <text>{{item.title}}</text>
+   </view>
+</view> -->
+
+<view wx:if="{{borrowNum==0}}">
+   <view class="shop">
+    <image src="/stages/tabBar/shop.png"></image>
+    <text>还没有借阅哦，快去逛逛吧</text>
+   </view>
+</view>
+
+<view wx:for="{{list}}" wx:key="id" class="c" wx:if="{{borrowNum>0}}">
+   <view class="b">
+      <icon wx:if="{{item.selected}}" type="success" color="#405A8F;" data-index="{{index}}" data-id="{{item._id}}" data-type="{{item.type}}" size='18' class="radio_chek" bindtap="selectOut" />
+      <icon wx:else type="circle" class="radio_chek" data-index="{{index}}" data-id="{{item._id}}" data-type="{{item.type}}" size='18' data-img="{{item.img}}" data-title="{{item.title}}" bindtap="selectList" />
+      <image src="{{item.img}}" class="c_image" bindtap="gobook" data-id="{{item._id}}" data-type='{{item.type}}'></image>
+   </view>
+   <view class="c1">
+      <text>{{item.title}}</text>
+   </view>
+</view>
+
+
+<view class="cont_bot">
+   <!-- 全选ICON -->
+   <icon wx:if="{{selectAllStatus}}" type="success" color="#405A8F;" size='20' class="total-select" bindtap="selectAll" />
+   <!-- else -->
+   <icon wx:else type="circle" color="#999" class="total-select" size='20' bindtap="selectAll" />
+   <!-- 全选标题 -->
+   <text class='sel_count_name'>全选</text>
+   <label class='submit1' bindtap="appointmentBook">预约归还</label>
+</view>

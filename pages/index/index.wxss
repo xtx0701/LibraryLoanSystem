@@ -1,0 +1,120 @@
+/**index.wxss**/
+.a1{
+    margin-top: 20rpx;
+}
+.a2{
+    background-color: #EFEFF4;
+    height: 60rpx;
+    width: 708rpx;
+    border-radius: 15px;
+    margin-left: 22rpx;
+}
+.a3{
+    line-height: 60rpx;
+    display: flex;
+    flex-direction: row;
+}
+.a3 icon{
+    margin-top: 15rpx;
+    margin-left: 25rpx;
+}
+.a3 input{
+    margin-top: 8rpx;
+    margin-left: 15rpx;
+    font-size: 26rpx;
+}
+
+/**轮播图样式**/
+.movejpg{
+    width: 708rpx;
+    margin-left: 22rpx;
+    margin-top: 15rpx;
+}
+.movejpg image{
+    border-radius: 15px;
+}
+swiper image{
+    width: 100%;
+}
+
+ 
+/**新书推荐**/
+.newbook{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20rpx;
+}
+
+.newtext1{
+    font-size: larger;
+}
+.newtext2{
+    font-size: smaller;
+    margin-top: 10rpx;
+    color: gray;
+}
+
+.showbook1{
+    width: 730rpx;
+   margin-top: 20rpx;
+   
+}
+
+.showbook2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20rpx;
+}
+
+.showbook1 image{
+    width: 170rpx;
+    height: 220rpx;
+    border-radius: 15rpx;
+}
+.showbook3{
+    display: flex;
+    flex-direction: column;
+}
+.b1{
+    margin-left: 1rpx;
+}
+.showbook2 text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25rpx;
+    
+}
+.showtext{
+    margin-top: 10rpx;
+} 
+.newbook1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20rpx;
+    margin-top: 40rpx;
+}
+
+.col-book{
+    display:flex;
+}
+
+.col-book image{
+    width: 170rpx;
+    height: 220rpx;
+    border-radius: 15rpx;
+}
+
+.search{
+    width: 670rpx;
+    background-color: white;
+    left: 50%;
+    z-index: 900;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+

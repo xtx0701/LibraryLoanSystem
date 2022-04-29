@@ -1,0 +1,39 @@
+<view class="nav">
+    <image src="/stages/tabBar/ic.jpg"></image>
+</view>
+
+<view class='title'>
+    <view class='title_text'>
+        <text>书本名称:</text>
+        <input name="title" type='text'  bindblur='titleBlur'></input>
+    </view>
+</view>
+
+<view class='title'>
+    <view class='title_text'>
+        <text>姓名:</text>
+        <input name="title" type='text' bindblur='nameBlur'></input>
+    </view>
+</view>
+
+<view class='title'>
+    <view class='title_text'>
+        <text>电话:</text>
+        <input name="title" type='text'  bindblur='phoneBlur'></input>
+    </view>
+</view>
+
+<view class="addimg" wx:if="{{noImage}}">
+    <text>书籍图片:</text>
+    <image  src="/stages/tabBar/addimg.png" bindtap="imgBlur"></image>
+</view>
+
+<view wx:else>
+   <image src="{{imgUrl}}" class="imgSub"></image>
+</view>
+
+ 
+
+
+<button form-type='submit' bindtap="send" class='sureRelease' data-title="{{title}}" 
+data-name="{{name}}" data-phone="{{phone}}" data-img="{{imgUrl}}" >确认发布</button>

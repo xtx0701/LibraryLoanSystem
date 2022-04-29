@@ -1,0 +1,17 @@
+/* pages/history/history.wxss */
+.layout{
+    display: flex;
+    flex-direction: row;
+}
+.layin{
+    display:flex;
+    flex-direction: column;
+    margin-top: 18rpx;
+    margin-left: 20rpx;
+}
+.bookstyle{
+    width: 170rpx;
+    height: 220rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}

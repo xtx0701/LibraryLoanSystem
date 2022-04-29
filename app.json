@@ -1,0 +1,53 @@
+{
+        "pages": [
+                "pages/logs/logs",
+                "pages/index/index",
+                "pages/backbook/backbook",
+                "pages/myborrow/myborrow",
+                "pages/comment/comment",
+                "pages/borrow/borrow",
+                "pages/book/book",
+                "pages/attention/attention",
+                "pages/newbook/newbook",
+                "pages/newbook1/newbook1",
+                "pages/kcsj_Biography/kcsj_Biography",
+                "pages/wenxue/wenxue",
+                "pages/teach/teach",
+                "pages/preview/preview",
+                "pages/neirong/neirong",
+                "pages/Submit/Submit",
+                "pages/Useradd/Useradd",
+                "pages/history/history"
+        ],
+        "window": {
+                "navigationBarBackgroundColor": "#FFFFFF",
+                "navigationBarTextStyle": "black",
+                "navigationBarTitleText": "华软图书馆"
+        },
+        "tabBar": {
+                "selectedColor": "#0000FF",
+                "list": [
+                        {
+                                "pagePath": "pages/index/index",
+                                "text": "首页",
+                                "iconPath": "stages/tabBar/a4.png"
+                        },
+                        {
+                                "pagePath": "pages/book/book",
+                                "text": "书籍",
+                                "iconPath": "stages/tabBar/a2.jpg"
+                        },
+                        {
+                                "pagePath": "pages/borrow/borrow",
+                                "text": "书架",
+                                "iconPath": "stages/tabBar/borrow.png"
+                        },
+                        {
+                                "pagePath": "pages/logs/logs",
+                                "text": "我的",
+                                "iconPath": "stages/tabBar/a1.png"
+                        }
+                ]
+        },
+        "sitemapLocation": "sitemap.json"
+}

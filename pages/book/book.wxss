@@ -1,0 +1,66 @@
+
+/**左右盒子**/
+page{
+    height: 100%;
+}
+.both{
+    height: 100%;
+    display: flex;
+}
+.left1{
+    flex: 2;
+    line-height: 85rpx;
+    text-align: center;
+    position: fixed;
+    width: 250rpx;
+    
+    
+}
+.active{
+    color: blue;
+}
+.right1{
+    width: 500rpx;
+    flex: 5;
+    margin-left: 250rpx;
+}
+.bookimage{
+    width: 170rpx;
+    height: 220rpx;
+    margin-left: 20rpx;
+    padding: 20rpx;
+}
+.book{
+    display: flex;
+    flex-direction: row;
+}
+.book text{
+    margin-top: 20rpx;
+    font-size: small;
+}
+.bookadd{
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 180rpx;
+    position: absolute;
+    right: 60rpx;
+}
+
+/**点击样式**/
+.nav_left .nav_left_items.active {
+	position: relative;
+	background: #FFF;
+	color: #000080;
+}
+
+.nav_left .nav_left_items.active::before {
+	display: inline-block;
+	width: 6rpx;
+	height: 60rpx;
+	background: #000080;
+	content: '';
+	position: absolute;
+	top: 20rpx;
+	left: 0;
+}
+

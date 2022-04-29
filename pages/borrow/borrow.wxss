@@ -1,0 +1,105 @@
+/* pages/borrow/borrow.wxss */
+
+
+.shop image{
+    position: relative;
+    left: 150rpx;
+    top: 200rpx;
+    display: block;
+    width: 400rpx;
+    height: 400rpx;
+}
+
+.shop text{
+    position: relative;
+    left: 230rpx;
+    top: 225rpx;
+    font-size: larger;
+}
+
+
+.c{
+    display: flex;
+    flex-direction: row;
+}
+.c_image{
+    width: 170rpx;
+    height: 220rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+.c1{
+    display: flex;
+    flex-direction: column;
+}
+.c1 text{
+    padding-top: 10rpx;
+    margin-left: 40rpx;
+    margin-top: 10rpx;
+}
+.a{
+    width: 80rpx;
+    height: 80rpx;  
+    margin-top: 75rpx; 
+}
+.b{
+    display: flex;
+    flex-direction: row;
+
+}
+.radio_chek{
+    margin-top: 100rpx;
+    margin-left: 10rpx;
+}
+.total-select{
+    position: absolute;
+    left: 30rpx;
+    top: 30rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+.cont_bot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 104rpx;
+    line-height:104rpx;
+    background: #fff;
+    border-top: 2rpx solid #ebebeb;
+}
+/* 全选标题 */
+.sel_count_name{
+    position: absolute;
+    left: 90rpx;
+    top: 10rpx;
+    font-size: 35rpx;
+    color: #333;
+}
+.submit{
+    position: absolute;
+    width: 180rpx;
+    height: 104rpx;
+    line-height: 104rpx;
+    right: 0rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color:#fff;
+    background:linear-gradient(90deg,rgba(123,202,110,1) 0%,rgba(47,163,93,1) 100%);
+}
+.submit1{
+    position: absolute;
+    width: 180rpx;
+    height: 104rpx;
+    line-height: 104rpx;
+    right: 180rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color:#fff;
+    background-color: red;
+}
+
+.delectbook{
+   width: 50rpx;
+   height: 50rpx;
+   
+}

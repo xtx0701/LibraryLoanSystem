@@ -1,0 +1,16 @@
+<!--pages/neirong/neirong.wxml-->
+<view class="c">
+      <image src="{{good.img}}" class="ci"></image>
+    <view class="c1">
+      <text>{{good.title}}</text>
+      
+    </view>
+    <image src="/stages/tabBar/collection.png" class="cb"></image>
+     
+   </view>
+
+   <view class="cc"></view>
+<view class="c3">
+   <view class="cjianjie"><text>简介</text></view>
+   <view class="ctext"><text>{{good.sub2}}</text></view>
+</view>

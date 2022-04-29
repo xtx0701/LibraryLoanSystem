@@ -1,0 +1,28 @@
+/* pages/attention/attention.wxss */
+.a1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 70rpx;
+    font-weight: bolder;
+    color: #0000FF;
+  }
+  .a2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: brown;
+  }
+  .a3{
+    text-align: center;
+    font-size: 35rpx; 
+    color: azure; 
+    height: 70rpx; 
+    margin: 10rpx ;
+    line-height: 70rpx;
+    background: #09BB07;
+  }
+  .a4{
+    color: brown;
+    line-height: 50rpx;
+  }

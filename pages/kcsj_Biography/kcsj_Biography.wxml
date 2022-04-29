@@ -1,0 +1,10 @@
+<!--pages/kcsj_Biography/kcsj_Biography.wxml-->
+<view wx:for="{{list}}" wx:key="id" class="c">
+   <view>
+      <image src="{{item.img}}" bindtap="goDetail" data-id="{{item._id}}" data-type='{{item.type}}'></image>
+   </view>
+   <view class="c1">
+      <text>{{item.title}}</text>
+      
+   </view>
+</view>

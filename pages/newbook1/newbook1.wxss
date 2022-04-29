@@ -1,0 +1,164 @@
+/* pages/newbook1/newbook1.wxss */
+.c{
+    display: flex;
+    flex-direction: row;
+    height: 250rpx;
+    margin-top: 20rpx;
+}
+.ci{
+    width: 170rpx;
+    height: 220rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+
+.c1{
+    display: flex;
+    flex-direction: column;
+}
+
+.c1 text{
+    margin-left: 20rpx;
+    padding: 10rpx;
+}
+.t1{
+    font-size: smaller;
+    color: blue;
+}
+.t2{
+    font-size: smaller;
+    color: gray;
+}
+.cc{
+    background-color:#EFEFF4;
+    height: 30rpx;
+    margin-top: 20rpx;
+}
+
+/*简介样式*/
+.c3{
+    margin-left: 20rpx;
+}
+
+.cjianjie{
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+.c3 text{
+    margin-top: 20rpx;
+    font-size: small;
+    color: gray;
+}
+/*展开收起功能 */
+.conts {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    /*关键属性（必须有的）  */
+    display: -webkit-box;
+  }
+  
+  .hide {
+    /*规定子元素的排列方向 */
+    -webkit-box-orient: vertical;
+    /*限制文本显示的行数  */
+    -webkit-line-clamp: 3;
+    /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .go{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+  }
+  .go2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+  }
+
+
+  .go1{
+      margin-left: 30rpx;
+      margin-top: 20rpx;
+  }
+  .gorow{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gorow text{
+      position: relative;
+      top: 25rpx;
+      left: 20rpx;
+  }
+  
+
+  .go2 image{
+      margin-left: 30rpx;
+      margin-top: 20rpx;
+      width: 50rpx;
+      height: 50rpx;
+      border-radius: 50%;
+  }
+
+  .go text{
+    font-size: smaller;
+    padding: 10rpx;
+    margin-left: 20rpx;
+    color: gray
+  }
+
+  .t1{
+      font-size: smaller;
+      padding: 10rpx;
+      margin-left: 20rpx;
+      color: gray
+  }
+
+  .bottom{
+      border-top: 1rpx solid #ccc;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height:120rpx;
+      background-color: white;
+      display: flex;
+  }
+  .bottom1{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .bottom2{
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+      font-size: 30rpx;
+      font-weight: 600;
+  }
+  .bottom3{
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      font-size: 30rpx;
+      font-weight: 600;
+  }
+  .bottom image{
+      width: 50rpx;
+      height: 50rpx;
+     margin-left: 8rpx;
+  }
+ 
+ 
+  
